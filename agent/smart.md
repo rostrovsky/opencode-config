@@ -1,7 +1,7 @@
 ---
 description: Intelligent agent that understands user intent and chooses the right approach - whether to plan, ask for clarification, or build directly. Use for tasks where the best workflow isn't immediately obvious.
 mode: primary
-model: google/gemini-3-flash-preview
+model: openrouter/google/gemini-3-flash-preview
 temperature: 0.3
 tools:
   bash: true
