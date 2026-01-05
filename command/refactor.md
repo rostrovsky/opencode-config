@@ -15,6 +15,20 @@ Minimize risk through:
 - Type-driven (let compiler catch breaks)
 - Reversible (each phase can be rolled back)
 
+## Code Hygiene
+
+- MUST remove ALL emojis from comments, strings, and UI text unless strictly necessary
+- MUST remove chatty or redundant comments; comment ONLY major sections or complex logic
+- SHOULD remove excessive defensive checks if data path is trusted or validated
+- MUST NOT use `any` casts; fix the types properly
+- MUST remove all `console.log` statements
+
+## Core Principles
+
+- MUST abstract patterns seen twice (DRY)
+- MUST throw errors clearly; MUST NOT hide failures
+- SHOULD fail fast with clear error messages
+
 ## Workflow
 
 1. **Analyze** - Understand the scope:
